@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="IsekaiSubTool.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cctr="clr-namespace:IsekaiSubTool;assembly=IsekaiSubTool"
+    xmlns:storage="using:Windows.Storage"
+    mc:Ignorable="d"
+    
+    
+    Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Pivot Padding="0" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionChanged="Pivot_SelectionChanged">
+            <PivotItem Padding="0,0,0,0" Margin="0">
+                <PivotItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="AllApps" Margin="0,0,10,0"></SymbolIcon>
+                        <TextBlock>По главам</TextBlock>
+                        
+                    </StackPanel>
+                    
+                </PivotItem.Header>
+                <Grid x:Name="xGrid">
+                    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <FlipView  x:Name="ChFlip" SelectionChanged="FlipView_SelectionChanged" Margin="0,10,0,0" VerticalAlignment="Stretch">
+                    <FlipViewItem Tapped="FlipViewItem_Tapped">
+                        <Image Stretch="UniformToFill" Source="102a.png"></Image>
+                    </FlipViewItem>
+                    <FlipViewItem Tapped="FlipViewItem_Tapped">
+                        <Image Stretch="UniformToFill" Source="102b.png"></Image>
+                    </FlipViewItem>
+                    <FlipViewItem Tapped="FlipViewItem_Tapped">
+                        <Image Stretch="UniformToFill" Source="102c.png"></Image>
+                    </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            
+                            <Image Stretch="UniformToFill" Source="102d.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102e.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102f.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102g.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102h.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102i.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102j.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102k.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102l.png"></Image>
+                        </FlipViewItem>
+                        <FlipViewItem Tapped="FlipViewItem_Tapped">
+                            <Image Stretch="UniformToFill" Source="102m.png"></Image>
+                        </FlipViewItem>
+                    </FlipView>
+                    <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="23" Name="ChName"></TextBlock>
+                </Grid>
+                    
+                </Grid>
+                
+                
+                
+            </PivotItem>
+            <PivotItem Padding="0" Margin="0">
+                <PivotItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="OtherUser" Margin="0,0,10,0"></SymbolIcon>
+                        <TextBlock>По персонажам</TextBlock>
+                    </StackPanel>
+
+                </PivotItem.Header>
+                <Grid Name="xPGRID">
+                    <ScrollViewer Name="PersScroll">
+                        <StackPanel Orientation="Vertical" Name="PersWrapper">
+
+                            
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+                
+                
+            </PivotItem>
+        </Pivot>
+        <Grid x:Name="MainLoading" Background="{ThemeResource SystemControlAcrylicElementBrush}">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ProgressRing Name="MLSpinner" Width="48" Height="48" IsActive="True"></ProgressRing>
+                <TextBlock x:Name="MLText" FontSize="18" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Margin="0, 20, 0, 0">Подготовка к загрузке аудио...</TextBlock>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Page>

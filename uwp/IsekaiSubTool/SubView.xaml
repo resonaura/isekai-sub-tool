@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="IsekaiSubTool.SubView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IsekaiSubTool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+
+    <Grid Padding="30">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock TextAlignment="Center" FontSize="18" Opacity=".5" Name="MainHeader"></TextBlock>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap" Name="MainText" FontSize="36">Выберите субтитр</TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Page>

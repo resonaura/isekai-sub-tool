@@ -1,0 +1,35 @@
+﻿<UserControl
+    x:Class="IsekaiSubTool.DialogListItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IsekaiSubTool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="100"
+    d:DesignWidth="400" Height="100" Margin="0,0,10,0">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Tapped="Button_Tapped" Style="{ThemeResource ButtonRevealStyle}" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Transparent">
+            <SymbolIcon Symbol="Play" Name="PIcon"></SymbolIcon></Button>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Margin="10,0,0,0" Grid.Row="0" VerticalAlignment="Center" Name="DHeader" Text="{Binding Header}">
+            </TextBlock>
+            <TextBox TextWrapping="Wrap" TextChanged="DBox_TextChanged" Style="{ThemeResource AutoSuggestBoxTextBoxStyle}" Grid.Row="1" Text="{Binding Text}" Name="DBox">
+
+            </TextBox>
+        </Grid>
+        <Grid Grid.Column="2" CanDrag="True" DragStarting="FileCopyDrag">
+            <SymbolIcon Symbol="Copy"></SymbolIcon>
+        </Grid>
+    </Grid>
+</UserControl>

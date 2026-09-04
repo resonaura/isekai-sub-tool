@@ -1,0 +1,2 @@
+MainPackage=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x86\Release\IsekaiSubTool_1.0.3.0_x86.appx
+SymbolPackage=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\obj\x86\Release\Symbols\IsekaiSubTool_1.0.3.0_x86.appxsym

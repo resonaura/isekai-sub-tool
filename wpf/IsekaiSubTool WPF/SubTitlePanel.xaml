@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="IsekaiSubTool_WPF.SubTitlePanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IsekaiSubTool_WPF"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ScrollViewer CanContentScroll="False" Grid.Row="0" x:Name="DlogsWrapper" VerticalAlignment="Top">
+            <StackPanel Opacity="0" x:Name="DLogs">
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid x:Name="BottomPanel" Opacity="1" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  Height="50">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity=".1"></SolidColorBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="0" x:Name="ReturnButton" Click="ReturnButton_Click"  HorizontalAlignment="Stretch" Background="Transparent" VerticalAlignment="Stretch" Height="50" >
+                <StackPanel>
+                    <materialDesign:PackIcon Kind="ArrowLeft" HorizontalAlignment="Center"/>
+                    <TextBlock>Вернуться назад</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" x:Name="SaveButton" Click="SaveButton_Click" HorizontalAlignment="Stretch" Background="Transparent" VerticalAlignment="Stretch" Height="50" >
+                <StackPanel>
+                    <materialDesign:PackIcon Kind="ContentSave" HorizontalAlignment="Center"/>
+                    <TextBlock>Сохранить изменения на сервер</TextBlock>
+                </StackPanel>
+            </Button>
+            <ToggleButton Style="{StaticResource MaterialDesignFlatButton}" x:Name="SubButton"  Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked" Grid.Column="2" HorizontalAlignment="Stretch" Background="Transparent" VerticalAlignment="Stretch" Height="50">
+                <StackPanel>
+                    <materialDesign:PackIcon Kind="Subtitles" HorizontalAlignment="Center"/>
+                    <TextBlock>Отдельное окно субтитра</TextBlock>
+                </StackPanel>
+            </ToggleButton>
+        </Grid>
+        <mah:ProgressRing Name="MainProgress" Width="64" Height="64" IsActive="False"></mah:ProgressRing>
+    </Grid>
+</UserControl>

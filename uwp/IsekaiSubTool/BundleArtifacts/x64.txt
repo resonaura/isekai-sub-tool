@@ -1,0 +1,7 @@
+MainPackage=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x64\Release\IsekaiSubTool_1.0.3.0_x64.appx
+SymbolPackage=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\obj\x64\Release\Symbols\IsekaiSubTool_1.0.3.0_x64.appxsym
+ResourcePack=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x64\Release\IsekaiSubTool_1.0.3.0_language-ru.appx
+ResourcePack=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x64\Release\IsekaiSubTool_1.0.3.0_scale-100.appx
+ResourcePack=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x64\Release\IsekaiSubTool_1.0.3.0_scale-125.appx
+ResourcePack=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x64\Release\IsekaiSubTool_1.0.3.0_scale-150.appx
+ResourcePack=C:\Users\werto\source\repos\IsekaiSubTool\IsekaiSubTool\bin\x64\Release\IsekaiSubTool_1.0.3.0_scale-400.appx
