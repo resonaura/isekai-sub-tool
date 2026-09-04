@@ -9,6 +9,11 @@
 
 **IsekaiSubTool** is a specialized voice-acting production and subtitle synchronization workstation developed for a fan dubbing group ("Isekai") working on Telltale Games' *The Walking Dead: Season 1*.
 
+
+<p align="center">
+  <img src="media/isekai-sub-tool.jpg" width="800" alt="Isekai Sub Tool Dialogue & Timing Editor" />
+</p>
+
 ---
 
 > [!WARNING]
