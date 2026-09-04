@@ -6,6 +6,7 @@
 [![Context](https://img.shields.io/badge/Context-The%20Walking%20Dead%20Fan%20Dub-e05d44.svg)](#-origin--story)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010-0078D6.svg?logo=windows&logoColor=white)](#disclaimer--legacy-notice)
 [![Status](https://img.shields.io/badge/Status-Historical%20Archive%20(2019)-yellow.svg)](#disclaimer--legacy-notice)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/resonaura)
 
 **IsekaiSubTool** is a specialized voice-acting production and subtitle synchronization workstation developed for a fan dubbing group ("Isekai") working on Telltale Games' *The Walking Dead: Season 1*.
 
