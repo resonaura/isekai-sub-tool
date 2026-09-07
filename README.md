@@ -7,13 +7,14 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010-0078D6.svg?logo=windows&logoColor=white)](#disclaimer--legacy-notice)
 [![Status](https://img.shields.io/badge/Status-Historical%20Archive%20(2019)-yellow.svg)](#disclaimer--legacy-notice)
 
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-EA4AAA?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/resonaura)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/resonaura)
 
 **IsekaiSubTool** is a specialized voice-acting production and subtitle synchronization workstation developed for a fan dubbing group ("Isekai") working on Telltale Games' *The Walking Dead: Season 1*.
 
 
 <p align="center">
-  <img src="media/isekai-sub-tool.jpg" width="800" alt="Isekai Sub Tool Dialogue & Timing Editor" />
+  <img src="https://raw.githubusercontent.com/resonaura/isekai-sub-tool/main/media/isekai-sub-tool.jpg" width="800" alt="Isekai Sub Tool Dialogue & Timing Editor" />
 </p>
 
 ---
